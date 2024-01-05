@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Converter
-build_property.ProjectDir = C:\Users\nttha\OneDrive\Documents\C# Projects\school_exercise\Converter\
+build_property.ProjectDir = C:\Users\nttha\OneDrive\Documents\C# Projects\school_project\HTTM3_Converter\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nttha\\OneDrive\\Documents\\C# Projects\\school_exercise\\Converter\\Converter.csproj": {}
+    "C:\\Users\\nttha\\OneDrive\\Documents\\C# Projects\\school_project\\HTTM3_Converter\\Converter.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nttha\\OneDrive\\Documents\\C# Projects\\school_exercise\\Converter\\Converter.csproj": {
+    "C:\\Users\\nttha\\OneDrive\\Documents\\C# Projects\\school_project\\HTTM3_Converter\\Converter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nttha\\OneDrive\\Documents\\C# Projects\\school_exercise\\Converter\\Converter.csproj",
+        "projectUniqueName": "C:\\Users\\nttha\\OneDrive\\Documents\\C# Projects\\school_project\\HTTM3_Converter\\Converter.csproj",
         "projectName": "Converter",
-        "projectPath": "C:\\Users\\nttha\\OneDrive\\Documents\\C# Projects\\school_exercise\\Converter\\Converter.csproj",
+        "projectPath": "C:\\Users\\nttha\\OneDrive\\Documents\\C# Projects\\school_project\\HTTM3_Converter\\Converter.csproj",
         "packagesPath": "C:\\Users\\nttha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nttha\\OneDrive\\Documents\\C# Projects\\school_exercise\\Converter\\obj\\",
+        "outputPath": "C:\\Users\\nttha\\OneDrive\\Documents\\C# Projects\\school_project\\HTTM3_Converter\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nttha\\AppData\\Roaming\\NuGet\\NuGet.Config",

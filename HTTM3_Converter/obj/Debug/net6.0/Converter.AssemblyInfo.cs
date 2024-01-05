@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Converter")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+38d8f218c0f0c0be09db3c5bd3e5da59ddaa20b4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+105f59b70cfb6816cb8f73cdece1ddd2d2a4c72b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Converter")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Converter")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
