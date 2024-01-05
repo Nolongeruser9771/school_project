@@ -17,31 +17,39 @@
             Console.WriteLine("6. HEX -> BINARY");
             Console.WriteLine("0. EXIT");
 
+            Console.Write("Your option: ");
             var functionChoice = Console.ReadLine();
             functionChoiceImp(functionChoice);
         }
 
         static void functionChoiceImp(string functionChoice)
         {
+            Console.Write("Please input value: ");
+            string inputValue = Console.ReadLine();
+
             switch (functionChoice)
             {
                 case "1":
-                    hexToBinaryMenu();
+                    Console.WriteLine(isNumber(inputValue) ?
+                        "Result DEC -> BINARY: " + decimalToBinary(int.Parse(inputValue)) :
+                        "Input value is not valid decimal");
                     break;
                 case "2":
-                    decimalToHexMenu();
+                    Console.WriteLine(isNumber(inputValue) ?
+                        "Result DEC -> HEX: " + decimalToHex(int.Parse(inputValue)) :
+                        "Input value is not valid decimal");
                     break;
                 case "3":
-                    hexToDecMenu();
+                    Console.WriteLine("Result HEX -> DEC: " + hexToDecimal(inputValue));
                     break;
                 case "4":
-                    binaryToDecMenu();
+                    Console.WriteLine("Result BINARY -> DEC: " + hexToDecimal(inputValue));
                     break;
                 case "5":
-                    binaryToHexMenu();
+                    Console.WriteLine("Result BINARY -> HEX: " + binaryToHex(inputValue));
                     break;
                 case "6":
-                    hexToBinaryMenu();
+                    Console.WriteLine("Result HEX -> BINARY: " + hexToBinary(inputValue));
                     break;
                 case "0":
                     Environment.Exit(0);
@@ -51,75 +59,6 @@
                     break;
             }
 
-            //dec to binary menu
-            static void decimalToBinaryMenu()
-            {
-                Console.WriteLine("DEC -> BINARY");
-                Console.WriteLine("Please input dec");
-
-                var inputValue = Console.ReadLine();
-                if (isNumber(inputValue))
-                {
-                    Console.WriteLine("Result " + decimalToBinary(int.Parse(inputValue)));
-                    return;
-                }
-                Console.WriteLine("Input value is not valid decimal");
-            }
-
-            //dec to hex menu
-            static void decimalToHexMenu()
-            {
-                Console.WriteLine("DEC -> HEX");
-                Console.WriteLine("Please input dec");
-
-                var inputValue = Console.ReadLine();
-                if (isNumber(inputValue))
-                {
-                    Console.WriteLine("Result " + decimalToHex(int.Parse(inputValue)));
-                    return;
-                }
-                Console.WriteLine("Input value is not valid decimal");
-            }
-
-            //hex to dec menu
-            static void hexToDecMenu()
-            {
-                Console.WriteLine("HEX -> DEC");
-                Console.WriteLine("Please input hex");
-
-                var inputValue = Console.ReadLine();
-                Console.WriteLine("Result " + hexToDecimal(inputValue));
-            }
-
-            //binary to dec menu
-            static void binaryToDecMenu()
-            {
-                Console.WriteLine("BINARY -> DEC");
-                Console.WriteLine("Please input binary");
-
-                var inputValue = Console.ReadLine();
-                Console.WriteLine("Result " + hexToDecimal(inputValue));
-            }
-
-            //binary to hec menu
-            static void binaryToHexMenu()
-            {
-                Console.WriteLine("BINARY -> HEX");
-                Console.WriteLine("Please input binary");
-
-                var inputValue = Console.ReadLine();
-                Console.WriteLine("Result " + binaryToHex(inputValue));
-            }
-
-            //hex to binary menu
-            static void hexToBinaryMenu()
-            {
-                Console.WriteLine("HEX -> BINARY");
-                Console.WriteLine("Please input hex");
-
-                var inputValue = Console.ReadLine();
-                Console.WriteLine("Result " + hexToBinary(inputValue));
-            }
 
             //validate number
             static bool isNumber(string inputValue)
@@ -137,7 +76,7 @@
                     binaryNumber = tempt % 2 + binaryNumber;
                     tempt /= 2;
                 }
-                return binaryNumber.PadLeft(4, '0');
+                return binaryNumber.PadLeft(8, '0');
             }
 
             //dec -> hex
@@ -178,7 +117,7 @@
                     }
                     else
                     {
-                        Console.WriteLine("Input value is not valid binary");
+                        Console.WriteLine("Input value is not valid hex");
                         return -1;
                     }
                     decimalNumber += decimalDigit * Math.Pow(16, n - 1 - i);
@@ -222,7 +161,7 @@
                 long decimalNumber = hexToDecimal(hexNumber);
                 //dec to binary
                 string binaryNumber = decimalToBinary(decimalNumber);
-                return binaryNumber.PadLeft(4, '0');
+                return binaryNumber.PadLeft(8, '0');
             }
         }
     }
