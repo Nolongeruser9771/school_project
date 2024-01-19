@@ -22,7 +22,7 @@
             switch (functionChoice)
             {
                 case "1":
-                    Console.WriteLine("INT -> BIT ARRAY");
+                    Console.WriteLine("INT -> BINARY NUMBER");
                     int intNumber = inputIntNumber();
                     intNumberToBinary(intNumber);
                     break;
