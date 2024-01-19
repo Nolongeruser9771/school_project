@@ -48,30 +48,28 @@
             return int.Parse(intNumberInput);
         }
 
-        private static string intNumberToBinary(int intNumber)
+        private static void intNumberToBinary(int intNumber)
         {
             string binaryNumber = "";
-            for (int i = 0; i < 32; i++)
+            for (int i = 31; i >= 0; i--)
             {
                 int bit = (intNumber >> i) & 1;
-                binaryNumber = bit + binaryNumber;
+                binaryNumber += bit;
             }
             Console.WriteLine("Result: " + binaryNumber);
-            return binaryNumber;
         }
 
-        private static int bitArrayToIntNumber(int[] bitArray)
+        private static void bitArrayToIntNumber(int[] bitArray)
         {
             int binaryNumber = 0;
-            for (int i = 0; i < bitArray.Length; i++)
+            for (int i = bitArray.Length - 1; i >= 0; i--)
             {
                 if (bitArray[i] == 1)
                 {
-                    binaryNumber |= (1 << bitArray.Length - 1 - i);
+                    binaryNumber |= 1 << (bitArray.Length - 1 - i);
                 }
             }
             Console.WriteLine("Result: " + binaryNumber);
-            return binaryNumber;
         }
 
         private static int[] inputBitArray()
