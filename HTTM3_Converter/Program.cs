@@ -21,7 +21,7 @@
             var functionChoice = Console.ReadLine();
             functionChoiceImp(functionChoice);
         }
-
+        
         static void functionChoiceImp(string functionChoice)
         {
             Console.Write("Please input value: ");
@@ -43,7 +43,7 @@
                     Console.WriteLine("Result HEX -> DEC: " + hexToDecimal(inputValue));
                     break;
                 case "4":
-                    Console.WriteLine("Result BINARY -> DEC: " + hexToDecimal(inputValue));
+                    Console.WriteLine("Result BINARY -> DEC: " + binaryToDecimal(inputValue));
                     break;
                 case "5":
                     Console.WriteLine("Result BINARY -> HEX: " + binaryToHex(inputValue));
@@ -55,10 +55,9 @@
                     Environment.Exit(0);
                     break;
                 default:
-                    Console.WriteLine("Invalid option. Please choose again.");
+                    Console.WriteLine("Invalid option");
                     break;
             }
-
 
             //validate number
             static bool isNumber(string inputValue)
