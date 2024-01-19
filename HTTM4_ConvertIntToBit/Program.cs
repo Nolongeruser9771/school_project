@@ -50,7 +50,8 @@
         private static void intNumberToBinary(int intNumber)
         {
             string binaryNumber = "";
-            for (int i = 31; i >= 0; i--)
+            int bitDigits = 32;
+            for (int i = bitDigits-1; i >= 0; i--)
             {
                 int bit = (intNumber >> i) & 1;
                 binaryNumber += bit;
