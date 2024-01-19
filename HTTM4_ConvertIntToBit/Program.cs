@@ -1,7 +1,4 @@
-﻿
-
-
-namespace ConvertIntToBit
+﻿namespace ConvertIntToBit
 {
     class Convert
     {
@@ -26,19 +23,12 @@ namespace ConvertIntToBit
             {
                 case "1":
                     Console.WriteLine("INT -> BIT ARRAY");
-                    Console.WriteLine("Enter int number (4-byte):");
                     int intNumber = inputIntNumber();
-
-                    //int to bit 
                     intNumberToBinary(intNumber);
                     break;
                 case "2":
                     Console.WriteLine("BIT ARRAY -> INT");
-                    Console.WriteLine("Enter 32-bit array");
-                    //enter bit array
                     int[] bitArray = inputBitArray();
-
-                    //int to bit 
                     bitArrayToIntNumber(bitArray);
                     break;
                 default:
@@ -52,15 +42,16 @@ namespace ConvertIntToBit
             string intNumberInput;
             do
             {
+                Console.WriteLine("Enter int number (4-byte):");
                 intNumberInput = Console.ReadLine();
-            } while (int.TryParse(intNumberInput, out int intNumber));
+            } while (!int.TryParse(intNumberInput, out int intNumber));
             return int.Parse(intNumberInput);
         }
 
         private static string intNumberToBinary(int intNumber)
         {
             string binaryNumber = "";
-            for (int i = 0; i < 8; i++)
+            for (int i = 0; i < 32; i++)
             {
                 int bit = (intNumber >> i) & 1;
                 binaryNumber = bit + binaryNumber;
@@ -76,7 +67,7 @@ namespace ConvertIntToBit
             {
                 if (bitArray[i] == 1)
                 {
-                    binaryNumber = binaryNumber | (1 << bitArray.Length - 1 - i);
+                    binaryNumber |= (1 << bitArray.Length - 1 - i);
                 }
             }
             Console.WriteLine("Result: " + binaryNumber);
@@ -87,13 +78,15 @@ namespace ConvertIntToBit
         {
             int[] bitArray = new int[32];
             int index = 0;
+
+            Console.WriteLine("Enter 32-bit array");
             while (index < 32)
             {
-                Console.Write("bitArray[" + index + "] = ");
-                int bitNumber = int.Parse(Console.ReadLine());
-                if (bitNumber == 0 || bitNumber == 1)
+                Console.Write("bitArray[" + (index + 1) + "] = ");
+                string bitNumber = Console.ReadLine();
+                if (bitNumber == "0" || bitNumber == "1")
                 {
-                    bitArray[index] = bitNumber;
+                    bitArray[index] = int.Parse(bitNumber);
                     index++;
                     continue;
                 }
