@@ -40,8 +40,7 @@
         private static int inputIntNumber()
         {
             string intNumberInput;
-            do
-            {
+            do {
                 Console.WriteLine("Enter int number (4-byte):");
                 intNumberInput = Console.ReadLine();
             } while (!int.TryParse(intNumberInput, out int intNumber));
