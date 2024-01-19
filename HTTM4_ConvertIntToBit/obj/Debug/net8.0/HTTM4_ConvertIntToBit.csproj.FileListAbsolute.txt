@@ -1,0 +1,15 @@
+C:\Users\nttha\OneDrive\Documents\C# Projects\school_project\HTTM4_ConvertIntToBit\bin\Debug\net8.0\HTTM4_ConvertIntToBit.exe
+C:\Users\nttha\OneDrive\Documents\C# Projects\school_project\HTTM4_ConvertIntToBit\bin\Debug\net8.0\HTTM4_ConvertIntToBit.deps.json
+C:\Users\nttha\OneDrive\Documents\C# Projects\school_project\HTTM4_ConvertIntToBit\bin\Debug\net8.0\HTTM4_ConvertIntToBit.runtimeconfig.json
+C:\Users\nttha\OneDrive\Documents\C# Projects\school_project\HTTM4_ConvertIntToBit\bin\Debug\net8.0\HTTM4_ConvertIntToBit.dll
+C:\Users\nttha\OneDrive\Documents\C# Projects\school_project\HTTM4_ConvertIntToBit\bin\Debug\net8.0\HTTM4_ConvertIntToBit.pdb
+C:\Users\nttha\OneDrive\Documents\C# Projects\school_project\HTTM4_ConvertIntToBit\obj\Debug\net8.0\HTTM4_ConvertIntToBit.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nttha\OneDrive\Documents\C# Projects\school_project\HTTM4_ConvertIntToBit\obj\Debug\net8.0\HTTM4_ConvertIntToBit.AssemblyInfoInputs.cache
+C:\Users\nttha\OneDrive\Documents\C# Projects\school_project\HTTM4_ConvertIntToBit\obj\Debug\net8.0\HTTM4_ConvertIntToBit.AssemblyInfo.cs
+C:\Users\nttha\OneDrive\Documents\C# Projects\school_project\HTTM4_ConvertIntToBit\obj\Debug\net8.0\HTTM4_ConvertIntToBit.csproj.CoreCompileInputs.cache
+C:\Users\nttha\OneDrive\Documents\C# Projects\school_project\HTTM4_ConvertIntToBit\obj\Debug\net8.0\HTTM4_ConvertIntToBit.sourcelink.json
+C:\Users\nttha\OneDrive\Documents\C# Projects\school_project\HTTM4_ConvertIntToBit\obj\Debug\net8.0\HTTM4_ConvertIntToBit.dll
+C:\Users\nttha\OneDrive\Documents\C# Projects\school_project\HTTM4_ConvertIntToBit\obj\Debug\net8.0\refint\HTTM4_ConvertIntToBit.dll
+C:\Users\nttha\OneDrive\Documents\C# Projects\school_project\HTTM4_ConvertIntToBit\obj\Debug\net8.0\HTTM4_ConvertIntToBit.pdb
+C:\Users\nttha\OneDrive\Documents\C# Projects\school_project\HTTM4_ConvertIntToBit\obj\Debug\net8.0\HTTM4_ConvertIntToBit.genruntimeconfig.cache
+C:\Users\nttha\OneDrive\Documents\C# Projects\school_project\HTTM4_ConvertIntToBit\obj\Debug\net8.0\ref\HTTM4_ConvertIntToBit.dll
