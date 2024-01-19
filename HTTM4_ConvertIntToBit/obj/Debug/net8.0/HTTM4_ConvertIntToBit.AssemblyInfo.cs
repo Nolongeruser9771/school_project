@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HTTM4_ConvertIntToBit")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ea437efe5b660dc6a547b69f25d7196dd7686393")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ea9d1eed91ff1520ce5e68b035335da29d672716")]
 [assembly: System.Reflection.AssemblyProductAttribute("HTTM4_ConvertIntToBit")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HTTM4_ConvertIntToBit")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

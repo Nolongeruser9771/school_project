@@ -1,4 +1,6 @@
 ﻿
+
+
 namespace ConvertIntToBit
 {
     class Convert
@@ -25,7 +27,7 @@ namespace ConvertIntToBit
                 case "1":
                     Console.WriteLine("INT -> BIT ARRAY");
                     Console.WriteLine("Enter int number (4-byte):");
-                    int intNumber = int.Parse(Console.ReadLine());
+                    int intNumber = inputIntNumber();
 
                     //int to bit 
                     intNumberToBinary(intNumber);
@@ -45,17 +47,43 @@ namespace ConvertIntToBit
             }
         }
 
-        private static void bitArrayToIntNumber(int[] bitArray)
+        private static int inputIntNumber()
         {
-            throw new NotImplementedException();
+            string intNumberInput;
+            do
+            {
+                intNumberInput = Console.ReadLine();
+            } while (int.TryParse(intNumberInput, out int intNumber));
+            return int.Parse(intNumberInput);
         }
 
-        private static void intNumberToBinary(int intNumber)
+        private static string intNumberToBinary(int intNumber)
         {
-            throw new NotImplementedException();
+            string binaryNumber = "";
+            for (int i = 0; i < 8; i++)
+            {
+                int bit = (intNumber >> i) & 1;
+                binaryNumber = bit + binaryNumber;
+            }
+            Console.WriteLine("Result: " + binaryNumber);
+            return binaryNumber;
         }
 
-        static int[] inputBitArray()
+        private static int bitArrayToIntNumber(int[] bitArray)
+        {
+            int binaryNumber = 0;
+            for (int i = 0; i < bitArray.Length; i++)
+            {
+                if (bitArray[i] == 1)
+                {
+                    binaryNumber = binaryNumber | (1 << bitArray.Length - 1 - i);
+                }
+            }
+            Console.WriteLine("Result: " + binaryNumber);
+            return binaryNumber;
+        }
+
+        private static int[] inputBitArray()
         {
             int[] bitArray = new int[32];
             int index = 0;
@@ -74,14 +102,14 @@ namespace ConvertIntToBit
             showBitArray(bitArray);
             return bitArray;
         }
-        static void showBitArray(int[] bitArray)
+        private static void showBitArray(int[] bitArray)
         {
             Console.Write("bitArray = [");
-            foreach (int bit in bitArray)
+            for (int i = 0; i < bitArray.Length; i++)
             {
-                Console.Write(bit + ",");
+                Console.Write(bitArray[i]);
+                Console.Write(i == bitArray.Length - 1 ? "]\n" : ",");
             }
-            Console.Write("]");
         }
     }
 }
