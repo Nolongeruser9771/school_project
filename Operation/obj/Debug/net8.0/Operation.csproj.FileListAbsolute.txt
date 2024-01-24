@@ -1,0 +1,15 @@
+C:\Users\nttha\OneDrive\Documents\C# Projects\school_project\Operation\bin\Debug\net8.0\Operation.exe
+C:\Users\nttha\OneDrive\Documents\C# Projects\school_project\Operation\bin\Debug\net8.0\Operation.deps.json
+C:\Users\nttha\OneDrive\Documents\C# Projects\school_project\Operation\bin\Debug\net8.0\Operation.runtimeconfig.json
+C:\Users\nttha\OneDrive\Documents\C# Projects\school_project\Operation\bin\Debug\net8.0\Operation.dll
+C:\Users\nttha\OneDrive\Documents\C# Projects\school_project\Operation\bin\Debug\net8.0\Operation.pdb
+C:\Users\nttha\OneDrive\Documents\C# Projects\school_project\Operation\obj\Debug\net8.0\Operation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nttha\OneDrive\Documents\C# Projects\school_project\Operation\obj\Debug\net8.0\Operation.AssemblyInfoInputs.cache
+C:\Users\nttha\OneDrive\Documents\C# Projects\school_project\Operation\obj\Debug\net8.0\Operation.AssemblyInfo.cs
+C:\Users\nttha\OneDrive\Documents\C# Projects\school_project\Operation\obj\Debug\net8.0\Operation.csproj.CoreCompileInputs.cache
+C:\Users\nttha\OneDrive\Documents\C# Projects\school_project\Operation\obj\Debug\net8.0\Operation.sourcelink.json
+C:\Users\nttha\OneDrive\Documents\C# Projects\school_project\Operation\obj\Debug\net8.0\Operation.dll
+C:\Users\nttha\OneDrive\Documents\C# Projects\school_project\Operation\obj\Debug\net8.0\refint\Operation.dll
+C:\Users\nttha\OneDrive\Documents\C# Projects\school_project\Operation\obj\Debug\net8.0\Operation.pdb
+C:\Users\nttha\OneDrive\Documents\C# Projects\school_project\Operation\obj\Debug\net8.0\Operation.genruntimeconfig.cache
+C:\Users\nttha\OneDrive\Documents\C# Projects\school_project\Operation\obj\Debug\net8.0\ref\Operation.dll
