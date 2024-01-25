@@ -108,8 +108,13 @@ namespace Operation
         }
         private static string BinaryDivision(string? binaryNum1, string? binaryNum2)
         {
-            string Q = binaryNum2;
-            string M = binaryNum1;
+            string Q = binaryNum1;
+            string M = binaryNum2;
+            if (binaryNum2 == "00000000")
+            {
+                return "Cannot divide to zero";
+            }
+
             string A = Q[0] == '1' ? "11111111" : "00000000";
             int k = 8;
             string shiftedA = "";
