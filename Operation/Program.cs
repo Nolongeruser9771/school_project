@@ -33,7 +33,6 @@ namespace Operation
 
         private static string BinaryAddition(string? binaryNum1, string? binaryNum2)
         {
-            //0011 & 0001
             int bitDigits = 8;
 
             char[] result = new char[bitDigits];
@@ -108,36 +107,43 @@ namespace Operation
         }
         private static string BinaryDivision(string? binaryNum1, string? binaryNum2)
         {
-            string Q = binaryNum1;
-            string M = binaryNum2;
+            bool isNegative = binaryNum1[0] == '1' ^ binaryNum2[0] == '1';
+
+            // Convert to positive if negative
+            string Q = binaryNum1[0] == '1' ? NegateBinary(binaryNum1) : binaryNum1;
+            string M = binaryNum2[0] == '1' ? NegateBinary(binaryNum2) : binaryNum2;
+            
+            int digits = 8;
             if (binaryNum2 == "00000000")
             {
                 return "Cannot divide to zero";
             }
 
             string A = Q[0] == '1' ? "11111111" : "00000000";
-            int k = 8;
+            int k = digits;
             string shiftedA = "";
             while (k > 0)
             {
                 //shift left
                 shiftedA = (A + Q + '0');
 
-                A = shiftedA.Substring(1, 8);
-                Q = shiftedA.Substring(9, 8);
+                A = shiftedA.Substring(1, digits);
+                Q = shiftedA.Substring(digits + 1, digits);
                 A = BinarySubtraction(A, M);
 
                 if (A[0] == '1')
                 {
-                    Q = Q.Substring(0, 7) + '0';
+                    Q = Q.Substring(0, digits - 1) + '0';
                     A = BinaryAddition(A, M);
                 }
                 else
                 {
-                    Q = Q.Substring(0, 7) + '1';
+                    Q = Q.Substring(0, digits - 1) + '1';
                 }
                 k = k - 1;
             }
+            Q = isNegative ? NegateBinary(Q) : Q;
+            A = binaryNum1[0] == '1'  ? NegateBinary(A) : A;
             return "Q = " + Q + "; A = " + A;
         }
 
